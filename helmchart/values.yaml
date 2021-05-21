@@ -33,16 +33,16 @@ resources:
 image:
   imagePullPolicy: Always
   dev:
-    repository: quay.io/tayyiposmanoglu/nginx
+    repository: quay.io/swoturkey/nginx
     tag: devlatest
   test:
-    repository: quay.io/tayyiposmanoglu/nginx
+    repository: quay.io/swoturkey/nginx
     tag: QAlatest
   preprod:
-    repository: quay.io/tayyiposmanoglu/nginx
+    repository: quay.io/swoturkey/nginx
     tag: preplatest
   prod:
-    repository: quay.io/tayyiposmanoglu/nginx
+    repository: quay.io/swoturkey/nginx
     tag: latest
 
 # ConfigMap-Secret controls
