@@ -1,0 +1,52 @@
+# Default values for nginx
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# Common controls
+environment: dev
+application: nginx
+containerPort: 8080
+
+# Service controls
+service:
+  name: nginx-svc
+  type: ClusterIP
+  port: 8080
+
+# Deployment controls
+restartPolicy: Always
+replicas: 1
+resources:
+  requests:
+    cpu: 150m
+    memory: 500Mi
+  limits:
+    cpu: 500m
+    memory: 1Gi
+
+image:
+  imagePullPolicy: Always
+  dev:
+    repository: quay.io/tayyiposmanoglu/nginx
+    tag: devlatest
+  test:
+    repository: quay.io/tayyiposmanoglu/nginx
+    tag: QAlatest
+  preprod:
+    repository: quay.io/tayyiposmanoglu/nginx
+    tag: preplatest
+  prod:
+    repository: quay.io/tayyiposmanoglu/nginx
+    tag: latest
+
+# ConfigMap-Secret controls
+index_text: IBTech-Demo
+version_number: 1.0.0
+dev:
+  secret_env: devValue
+test:
+  secret_env: testValue
+preprod:
+  secret_env: preprodValue
+prod:
+  secret_env: prodValue
