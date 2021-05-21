@@ -13,6 +13,12 @@ service:
   type: ClusterIP
   port: 8080
 
+# Route controls
+route:
+  name: nginx-route
+  dev:
+    hostName: nginx-ibtech-demo.apps.ocp.dataserv.local
+
 # Deployment controls
 restartPolicy: Always
 replicas: 1
