@@ -47,7 +47,7 @@ image:
 
 # ConfigMap-Secret controls
 index_text: Ibtech-Demo
-version_number: 1.0.0
+version_number: 1.0.1
 dev:
   secret_env: devValue
 test:
