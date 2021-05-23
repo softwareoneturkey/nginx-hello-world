@@ -15,7 +15,7 @@ spec:
         app: nginx-hello-world
     spec:
       containers:
-        - image: image-registry.openshift-image-registry.svc:5000/xxx-devops/nginx-hello-world:latest
+        - image: image-registry.openshift-image-registry.svc:5000/ibtech-devops/nginx-hello-world:latest
           imagePullPolicy: Always
           name: nginx-hello-world
           ports:
