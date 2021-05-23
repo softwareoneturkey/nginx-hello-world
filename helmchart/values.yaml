@@ -17,7 +17,7 @@ service:
 route:
   name: nginx-route
   dev:
-    hostName: nginx-ibtech-demo.apps.ocp.dataserv.local
+    hostName: nginx-xxx-demo.apps.ocp.dataserv.local
 
 # Deployment controls
 restartPolicy: Always
@@ -46,7 +46,7 @@ image:
     tag: latest
 
 # ConfigMap-Secret controls
-index_text: IBTech-Demo
+index_text: xxx-Demo
 version_number: 1.0.0
 dev:
   secret_env: devValue
