@@ -46,7 +46,7 @@ image:
     tag: latest
 
 # ConfigMap-Secret controls
-index_text: ibtech-Demo
+index_text: Ibtech-Demo
 version_number: 1.0.0
 dev:
   secret_env: devValue
