@@ -33,8 +33,8 @@ resources:
 image:
   imagePullPolicy: Always
   dev:
-    repository: quay.io/swoturkey/nginx
-    tag: devlatest
+    repository: image-registry.openshift-image-registry.svc:5000/ibtech-devops/nginx-hello-world
+    tag: latest
   test:
     repository: quay.io/swoturkey/nginx
     tag: QAlatest
@@ -47,7 +47,7 @@ image:
 
 # ConfigMap-Secret controls
 index_text: Ibtech-Demo
-version_number: 1.0.1
+version_number: 1.0.2
 dev:
   secret_env: devValue
 test:
