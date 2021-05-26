@@ -45,8 +45,8 @@ image:
     tag: latest
 
 # ConfigMap-Secret controls
-index_text: IBTech Core Services
-version_number: 1.1.0
+index_text: IBTech Core Services 
+version_number: 1.2.0
 dev:
   secret_env: devValue
 test:
