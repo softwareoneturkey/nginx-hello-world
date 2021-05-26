@@ -2,7 +2,6 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: nginx-hello-world-ibtech
-  namespace: ibtech-demo
 spec:
   host: nginx-hello-world-ibtech-ibtech-demo.apps.ocp.dataserv.local
   to:
