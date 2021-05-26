@@ -7,6 +7,6 @@ data:
   index.html: |+
     <html>
     <body>
-      <h1>Hello, world from nginx to {{ .Values.index_text }} {{ .Values.version_number }}!</h1>
+      <h1>Hello, world from nginx to {{ .Values.index_text }} {{ .Values.version_number }}! - SoftwareONE </h1>
     </body>
     </html>
