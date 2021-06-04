@@ -1,0 +1,17 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: nginx-efes
+  namespace: efes-devops
+  labels:
+    app: nginx-hello-world
+    app.kubernetes.io/instance: anadolu-efes-nginx
+spec:
+  host: nginx-efes-efes-devops.apps.ocp.dataserv.local
+  to:
+    kind: Service
+    name: nginx-hello-world
+    weight: 100
+  port:
+    targetPort: 8080-tcp
+  wildcardPolicy: None
