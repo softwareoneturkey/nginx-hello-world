@@ -45,8 +45,8 @@ image:
     tag: latest
 
 # ConfigMap-Secret controls
-index_text: Turk Telekom Workshop
-version_number: 1.0.0
+index_text: Turk Telekom Workshop Demo
+version_number: 1.1.0
 dev:
   secret_env: devValue
 test:
