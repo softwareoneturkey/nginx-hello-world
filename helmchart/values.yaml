@@ -32,16 +32,16 @@ resources:
 image:
   imagePullPolicy: Always
   dev:
-    repository: quay.io/swoturkey/nginx:turk-telekom
-    tag: devlatest
+    repository: quay.io/swoturkey/nginx
+    tag: turktelekom
   test:
-    repository: quay.io/swoturkey/nginx:turk-telekom
+    repository: quay.io/swoturkey/nginx
     tag: QAlatest
   preprod:
-    repository: quay.io/swoturkey/nginx:turk-telekom
+    repository: quay.io/swoturkey/nginx
     tag: preplatest
   prod:
-    repository: quay.io/swoturkey/nginx:turk-telekom
+    repository: quay.io/swoturkey/nginx
     tag: latest
 
 # ConfigMap-Secret controls
