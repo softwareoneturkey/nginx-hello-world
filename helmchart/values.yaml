@@ -33,7 +33,7 @@ image:
   imagePullPolicy: Always
   dev:
     repository: quay.io/swoturkey/nginx
-    tag: turktelekom
+    tag: turk-telekom
   test:
     repository: quay.io/swoturkey/nginx
     tag: QAlatest
