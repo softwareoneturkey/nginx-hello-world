@@ -16,7 +16,7 @@ service:
 # Route controls
 route:
   name: nginx-route
-  hostName: nginx-xxx-demo.apps.ocp.dataserv.local
+  hostName: nginx-workshop-tt.apps.ocp.dataserv.local
 
 # Deployment controls
 restartPolicy: Always
@@ -32,20 +32,20 @@ resources:
 image:
   imagePullPolicy: Always
   dev:
-    repository: quay.io/swoturkey/nginx
+    repository: quay.io/swoturkey/nginx:turk-telekom
     tag: devlatest
   test:
-    repository: quay.io/swoturkey/nginx
+    repository: quay.io/swoturkey/nginx:turk-telekom
     tag: QAlatest
   preprod:
-    repository: quay.io/swoturkey/nginx
+    repository: quay.io/swoturkey/nginx:turk-telekom
     tag: preplatest
   prod:
-    repository: quay.io/swoturkey/nginx
+    repository: quay.io/swoturkey/nginx:turk-telekom
     tag: latest
 
 # ConfigMap-Secret controls
-index_text: xxx-Demo
+index_text: Turk Telekom Demo
 version_number: 1.0.0
 dev:
   secret_env: devValue

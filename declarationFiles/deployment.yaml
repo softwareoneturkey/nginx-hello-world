@@ -15,7 +15,7 @@ spec:
         app: nginx-hello-world
     spec:
       containers:
-        - image: image-registry.openshift-image-registry.svc:5000/xxx-devops/nginx-hello-world:latest
+        - image: quay.io/swoturkey/nginx:turk-telekom
           imagePullPolicy: Always
           name: nginx-hello-world
           ports:
