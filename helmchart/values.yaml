@@ -16,7 +16,7 @@ service:
 # Route controls
 route:
   name: nginx-route
-  hostName: nginx-xxx-demo.apps.ocp.dataserv.local
+  hostName: nginx-demo.apps.ocpdev.dataserv.local
 
 # Deployment controls
 restartPolicy: Always
